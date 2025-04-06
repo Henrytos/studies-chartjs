@@ -1,16 +1,16 @@
 {
-  "name": "studies-chartjs",
+  "name": "chartjs-example",
   "version": "1.0.0",
-  "description": "um estudo aprofundado na biblioteca chartjs",
   "license": "MIT",
-  "author": "Henrytos",
-  "type": "modulejs",
-  "main": "index.js",
   "scripts": {
-    "dev": "npx json-server api.json"
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html"
+  },
+  "devDependencies": {
+    "parcel": "^2.14.4"
   },
   "dependencies": {
-    "chart.js": "^4.4.8",
-    "json-server": "^1.0.0-beta.3"
+    "@cubejs-client/core": "^0.31.0",
+    "chart.js": "^4.0.0"
   }
 }
