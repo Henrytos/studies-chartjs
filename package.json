@@ -7,9 +7,10 @@
   "type": "modulejs",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "npx json-server api.json"
   },
   "dependencies": {
-    "chart.js": "^4.4.8"
+    "chart.js": "^4.4.8",
+    "json-server": "^1.0.0-beta.3"
   }
 }
