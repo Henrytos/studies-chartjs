@@ -1,0 +1,15 @@
+{
+  "name": "studies-chartjs",
+  "version": "1.0.0",
+  "description": "um estudo aprofundado na biblioteca chartjs",
+  "license": "MIT",
+  "author": "Henrytos",
+  "type": "modulejs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "chart.js": "^4.4.8"
+  }
+}
