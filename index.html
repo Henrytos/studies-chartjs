@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graficos</title>
+</head>
+
+<body>
+
+    <h1>grafico de linha</h1>
+
+    <div class="div_linear" style="width: 500px;">
+        <canvas id="linear-chart">
+        </canvas>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script>
+        (async () => {
+            const linearChartComponent = document.getElementById("linear-chart")
+            const labels = Array.from({ length: 8 }).map((_, i) => i)
+
+            const minNumbers = Array.from({ length: 8 }).map(() => 10)
+            const maxNumbers = Array.from({ length: 8 }).map(() => 0)
+            const numbers = Array.from({ length: 8 }).map((_, i) => {
+                const randomNumber = Math.random() * 10
+                return randomNumber
+            })
+
+            new Chart(linearChartComponent, {
+                type: "line",
+                data: {
+                    labels,
+                    datasets: [
+                        {
+                            label: "Numero Minimo",
+                            data: minNumbers
+                        },
+                        {
+                            label: "Numeros aletorios",
+                            data: numbers
+                        },
+                        {
+                            label: "Numero Maximo",
+                            data: maxNumbers
+                        }
+                    ]
+                }
+            })
+
+        })()
+    </script>
+</body>
+
+</html>
